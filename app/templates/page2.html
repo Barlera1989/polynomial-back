@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style='height:100%; display: flex; flex-direction: column; justify-content: space-evenly;'>
+  <div style='display: flex; flex-direction: row; justify-content: space-evenly'>
+
+
+
+    <div style="height:25vh ; width:10vw; border: 1px solid black; margin-top:20px"></div>
+
+    <form method="POST">
+      <div style='display: flex; flex-direction: column; justify-content: space-evenly; margin-top:25px'>
+
+        <div method="POST" style='display:flex; flex-direction: row ;margin: 3px;'>
+          <input type='input_a' name='input_a' id='input_a' style="height:2vh ; width:7vw; ">
+        </div>
+
+        <div method="POST" style='display:flex; flex-direction: row ;margin: 3px;'>
+          <input type='input_b' name='input_b' id='input_b' style="height:2vh ; width:7vw; ">
+        </div>
+
+        <div method="POST" style='display:flex; flex-direction: row ;margin: 3px;'>
+          <input type='input_c' name='input_c' id='input_c' style="height:2vh ; width:7vw; ">
+        </div>
+
+        <div method="POST" style='display:flex; flex-direction: row ;margin: 3px;'>
+          <input type='input_d' name='input_d' id='input_d' style="height:2vh ; width:7vw; ">
+        </div>
+
+        <div method="POST" style='display:flex; flex-direction: row ;margin: 3px;'>
+          <input type='input_e' name='input_e' id='input_e' style="height:2vh ; width:7vw; ">
+        </div>
+
+        <div method="POST" style='display:flex; flex-direction: row ;margin: 3px;'>
+          <input type='input_g' name='input_g' id='input_g' style="height:2vh ; width:7vw; ">
+        </div>
+
+      </div>
+
+  </div>
+
+  <div style='display: flex; flex-direction: row; justify-content: center'>
+
+    <button style="width: 200px;
+         border-radius: 10px;
+         border: 1px solid #CCC; 
+         background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.05), #FFF);
+         text-align: center" type="submit" name="submit_f" value="submit_f"> Submit data </button>
+
+    </form>
+
+  </div>
+</div>
+{% endblock %}
