@@ -12,3 +12,4 @@ class PolynomialAttributes():
         self.initial_value = 0
         self.max_iterations = 0
         self.tolerance = 0
+        self.url = ''

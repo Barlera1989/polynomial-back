@@ -3,6 +3,7 @@ from app.models import MainButton, PolynomialAttributes
 from json import dumps
 from app.services import *
 import json
+import datetime
 
 bp_index = Blueprint('index', __name__)
 
@@ -63,11 +64,9 @@ def request_data():
 @bp_index.route("/graphic", methods=['POST'])
 def show_graphics():
 
-    if request.method == "POST":
-
-        display_result(polynomial_object)
-
-    return {'message': 'graphs end'}
+    display_result(polynomial_object)
+    
+    return {'img': polynomial_object.url}
 
 
 @bp_index.route("/test", methods=['POST'])
