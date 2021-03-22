@@ -3,7 +3,6 @@ from scipy import optimize
 from app.models import *
 import plotly.express as px
 import math
-import ipdb
 import os
 import datetime
 
@@ -26,14 +25,6 @@ def optimize_data(polynomial_object):
         tol=polynomial_object.tolerance,
         maxiter=polynomial_object.max_iterations)
 
-
-   
-
-    
-
-    
-
-
     return optimized_data
 
 
@@ -46,7 +37,6 @@ def display_result(polynomial_object):
 
     x = np.array(range((polynomial_object.initial_value-10), (polynomial_object.initial_value + 10)))
                 
-
     polynomial = polynomial_object.polynomial_degrees
     convert_to_polynomial = np.poly1d(polynomial)
 
@@ -58,7 +48,6 @@ def display_result(polynomial_object):
 
     polynomial_object.url = OBJ_PATH
 
-    print('_________')
 
     
 
