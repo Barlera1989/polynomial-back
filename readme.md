@@ -80,7 +80,14 @@ __________________________________________________________________________
 
 ## ENDPOINTS
 
-Base URL:
+Base URL: (aws)
+
+```url
+http://barlerabucket.s3-website-sa-east-1.amazonaws.com
+```
+
+
+Base URL: (heroku)
 
 ```url
 https://optimize-polynomial.herokuapp.com/
@@ -101,8 +108,7 @@ body:
 ```json
 {
 	"n_values": 
-	[1,10,0]
-,
+	[1,10,0],
 	"k_value" : 1,
 	"initial_value" : 1,
 	"max_iterations": 500,
@@ -125,6 +131,6 @@ response:
 
 ```json
 {
-  "url": "fig1054135.svg"
+  "url": "/static/fig1054135.svg"
 }
 ```
